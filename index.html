@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arc reacter</title>
+<link rel="stylesheet" href="design.css" />
+
+</head>
+<body>
+    <div class="fullpage">
+        <div class="container">
+            <div class="contain"></div>
+            <div class="innercore"></div>
+            <div class="outercircle"></div>
+            <div class="outercirclebig"></div>
+            <div class="outermorebig"></div>
+<div class="coil-container">
+    <div class="coil coil-1"></div>
+    <div class="coil coil-2"></div>
+    <div class="coil coil-3"></div>
+    <div class="coil coil-4"></div>
+    <div class="coil coil-5"></div>
+    <div class="coil coil-6"></div>
+    <div class="coil coil-7"></div>
+    <div class="coil coil-8"></div>
+
+</div>
+
+        </div>
+        
+    </div>
+    
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+
+}
+.fullpage{
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(#353c44,#222931);
+    display: flex;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    border: 1px dashed #888;
+    margin: auto;
+position: relative;
+border-radius: 50%;
+background-color: #384c50;
+border: 1px solid rgb(18, 20, 20);
+box-shadow: 0px 0px 32px 8px rgb(18, 20, 20),0px 0px 4px 1px rgb(18, 20, 20) inset ;
+}
+.cointain{
+    width: 260px;
+    height: 260px;
+    margin: auto;
+position: relative;
+border-radius: 50%;
+background-color: rgb(22, 26, 27);
+z-index: 1;
+box-shadow: 0px 0px 4px 1px #52fefe;
+}
+.innercore{
+    position: absolute;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    background-color: #ffffff;
+    border: 5px solid #1b4e5f;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 4;
+box-shadow:0px 0px 9px 5px #52fefe ,0px 0px 11px 10px #52fefe inset;
+}
+.outercircle{
+    position: absolute;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    background-color: #ffffff;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 3;
+    border: 1px solid #52fefe; 
+    box-shadow:0px 0px 2px 1px #52fefe,0px 0px 11px 12px #52fefe inset ;
+}
+.outercirclebig{
+    position: absolute;
+    border-radius: 50%;
+    height: 185px;
+    width: 185px;
+    background-color: #073c4b;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    margin: auto;
+    box-shadow:0px 0px 5px 4px #52fefe,0px 0px 6px 2px #52fefe inset ;
+    
+}
+.outermorebig{
+    position: absolute;
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+    background-color: #ffffff;
+    top: 0;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow:0px 0px 5px 1px #52fefe,0px 0px 5px 4px #52fefe inset ;
+
+}
+.coil-cointainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: 4s infinite linear ghoomer;
+}
+.coil{
+    position: absolute;
+    height: 22px;
+    width: 35px;
+    background-color: #073c4b;
+    box-shadow: 0px 0px 5px 2px #52fefe inset;
+    left: calc(50% - 18px);
+    top: calc(50% - 113px);
+    z-index: 5;
+    transform-origin: 18px 113px;
+
+}
+.coil-1{
+    transform: rotate(0deg);
+    
+
+}
+.coil-2{
+    transform: rotate(45deg);
+}
+.coil-3{
+    transform: rotate(90deg);
+}
+.coil-4{
+    transform: rotate(135deg);
+}
+.coil-5{
+    transform: rotate(180deg);
+}
+.coil-6{
+    transform: rotate(225deg);
+}
+.coil-7{
+    transform: rotate(270deg);
+}
+.coil-8{
+    transform: rotate(315deg);
+}
+@keyframes ghoomer {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+    </style>
+      
+
+
+    
+    
+    
+</body>
+</html>
